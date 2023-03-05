@@ -10,7 +10,7 @@ class PlaceFinder {
     }
 
     locateUserHandler() {
-        if (navigator.geolocation) {
+        if (!navigator.geolocation) {
             alert('Location feature is not available - please use a more modern browser or manually enter an address')
             return
         }
